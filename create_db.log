@@ -1,0 +1,252 @@
+
+-------
+17/20/2021 17:20:15
+-------
+
+drop table if exists students_couurses, students, courses, groups CASCADE 
+create table groups(
+    /* SERIAL - iterate an id with next one +1 */
+	id SERIAL primary key not null unique,
+	name character varying (255) not null
+) 
+create table students(
+	id SERIAL primary key not null unique,
+	first_name character varying (255) not null,
+	last_name character varying (255) not null,
+	group_id integer,
+	/* if delete a group, all its students will be remove */
+	foreign key (group_id) references  groups(id) on delete CASCADE
+) 
+create table courses(
+	id integer unique,
+	name character varying (255) primary key,
+	description character varying (255)
+) 
+create table students_courses(
+	student_id integer references students(id) on delete cascade,
+	course_name character varying (255) references courses(name) on delete CASCADE
+) 
+
+-------
+17/20/2021 17:20:39
+-------
+
+drop table if exists students_couurses, students, courses, groups CASCADE 
+create table groups(
+    /* SERIAL - iterate an id with next one +1 */
+	id SERIAL primary key not null unique,
+	name character varying (255) not null
+) 
+create table students(
+	id SERIAL primary key not null unique,
+	first_name character varying (255) not null,
+	last_name character varying (255) not null,
+	group_id integer,
+	/* if delete a group, all its students will be remove */
+	foreign key (group_id) references  groups(id) on delete CASCADE
+) 
+create table courses(
+	id integer unique,
+	name character varying (255) primary key,
+	description character varying (255)
+) 
+create table students_courses(
+	student_id integer references students(id) on delete cascade,
+	course_name character varying (255) references courses(name) on delete CASCADE
+) 
+
+-------
+17/22/2021 17:22:09
+-------
+
+drop table if exists students_couurses, students, courses, groups CASCADE 
+create table groups(
+    /* SERIAL - iterate an id with next one +1 */
+	id SERIAL primary key not null unique,
+	name character varying (255) not null
+) 
+create table students(
+	id SERIAL primary key not null unique,
+	first_name character varying (255) not null,
+	last_name character varying (255) not null,
+	group_id integer,
+	/* if delete a group, all its students will be remove */
+	foreign key (group_id) references  groups(id) on delete CASCADE
+) 
+create table courses(
+	id integer unique,
+	name character varying (255) primary key,
+	description character varying (255)
+) 
+create table students_courses(
+	student_id integer references students(id) on delete cascade,
+	course_name character varying (255) references courses(name) on delete CASCADE
+) 
+
+-------
+17/27/2021 17:27:36
+-------
+
+drop table if exists students_couurses, students, courses, groups CASCADE 
+create table groups(
+    /* SERIAL - iterate an id with next one +1 */
+	id SERIAL primary key not null unique,
+	name character varying (255) not null
+) 
+create table students(
+	id SERIAL primary key not null unique,
+	first_name character varying (255) not null,
+	last_name character varying (255) not null,
+	group_id integer,
+	/* if delete a group, all its students will be remove */
+	foreign key (group_id) references  groups(id) on delete CASCADE
+) 
+create table courses(
+	id integer unique,
+	name character varying (255) primary key,
+	description character varying (255)
+) 
+create table students_courses(
+	student_id integer references students(id) on delete cascade,
+	course_name character varying (255) references courses(name) on delete CASCADE
+) 
+
+-------
+17/31/2021 17:31:45
+-------
+
+DROP TABLE IF EXISTS students_couurses, students, courses, groups CASCADE 
+CREATE TABLE groups(
+    /* SERIAL - iterate an id with next one +1 */
+	id SERIAL PRIMARY KEY NOT NULL UNIQUE,
+	name CHARACTER VARYING(255) NOT NULL
+) 
+CREATE TABLE students(
+	id SERIAL PRIMARY KEY NOT NULL UNIQUE,
+	first_name CHARACTER VARYING(255) NOT NULL,
+	last_name CHARACTER VARYING(255) NOT NULL,
+	group_id INTEGER,
+	/* if delete a group, all its students will be remove */
+	FOREIGN KEY (group_id) REFERENCES  groups(id) ON DELETE CASCADE
+) 
+CREATE TABLE courses(
+	id INTEGER UNIQUE,
+	name CHARACTER VARYING(255) PRIMARY KEY,
+	description CHARACTER VARYING(255)
+) 
+CREATE TABLE students_courses(
+	student_id INTEGER REFERENCES students(id) ON DELETE CASCADE,
+	course_name CHARACTER VARYING(255) REFERENCES courses(name) ON DELETE CASCADE
+) 
+
+-------
+17/36/2021 17:36:40
+-------
+
+DROP TABLE IF EXISTS students_couurses, students, courses, groups CASCADE 
+CREATE TABLE groups(
+    /* SERIAL - iterate an id with next one +1 */
+	id SERIAL PRIMARY KEY NOT NULL UNIQUE,
+	name CHARACTER VARYING(255) NOT NULL
+) 
+CREATE TABLE students(
+	id SERIAL PRIMARY KEY NOT NULL UNIQUE,
+	first_name CHARACTER VARYING(255) NOT NULL,
+	last_name CHARACTER VARYING(255) NOT NULL,
+	group_id INTEGER,
+	/* if delete a group, all its students will be remove */
+	FOREIGN KEY (group_id) REFERENCES  groups(id) ON DELETE CASCADE
+) 
+CREATE TABLE courses(
+	id INTEGER UNIQUE,
+	name CHARACTER VARYING(255) PRIMARY KEY,
+	description CHARACTER VARYING(255)
+) 
+CREATE TABLE students_courses(
+	student_id INTEGER REFERENCES students(id) ON DELETE CASCADE,
+	course_name CHARACTER VARYING(255) REFERENCES courses(name) ON DELETE CASCADE
+) 
+
+-------
+17/37/2021 17:37:24
+-------
+
+DROP TABLE IF EXISTS students_couurses, students, courses, groups CASCADE 
+CREATE TABLE groups(
+    /* SERIAL - iterate an id with next one +1 */
+	id SERIAL PRIMARY KEY NOT NULL UNIQUE,
+	name CHARACTER VARYING(255) NOT NULL
+) 
+CREATE TABLE students(
+	id SERIAL PRIMARY KEY NOT NULL UNIQUE,
+	first_name CHARACTER VARYING(255) NOT NULL,
+	last_name CHARACTER VARYING(255) NOT NULL,
+	group_id INTEGER,
+	/* if delete a group, all its students will be remove */
+	FOREIGN KEY (group_id) REFERENCES  groups(id) ON DELETE CASCADE
+) 
+CREATE TABLE courses(
+	id INTEGER UNIQUE,
+	name CHARACTER VARYING(255) PRIMARY KEY,
+	description CHARACTER VARYING(255)
+) 
+CREATE TABLE students_courses(
+	student_id INTEGER REFERENCES students(id) ON DELETE CASCADE,
+	course_name CHARACTER VARYING(255) REFERENCES courses(name) ON DELETE CASCADE
+) 
+
+-------
+17/38/2021 17:38:53
+-------
+
+DROP TABLE IF EXISTS students_couurses, students, courses, groups CASCADE 
+CREATE TABLE groups(
+    /* SERIAL - iterate an id with next one +1 */
+	id SERIAL PRIMARY KEY NOT NULL UNIQUE,
+	name CHARACTER VARYING(255) NOT NULL
+) 
+CREATE TABLE students(
+	id SERIAL PRIMARY KEY NOT NULL UNIQUE,
+	first_name CHARACTER VARYING(255) NOT NULL,
+	last_name CHARACTER VARYING(255) NOT NULL,
+	group_id INTEGER,
+	/* if delete a group, all its students will be remove */
+	FOREIGN KEY (group_id) REFERENCES  groups(id) ON DELETE CASCADE
+) 
+CREATE TABLE courses(
+	id INTEGER UNIQUE,
+	name CHARACTER VARYING(255) PRIMARY KEY,
+	description CHARACTER VARYING(255)
+) 
+CREATE TABLE students_courses(
+	student_id INTEGER REFERENCES students(id) ON DELETE CASCADE,
+	course_name CHARACTER VARYING(255) REFERENCES courses(name) ON DELETE CASCADE
+) 
+
+-------
+17/41/2021 17:41:49
+-------
+
+DROP TABLE IF EXISTS students_couurses, students, courses, groups CASCADE 
+CREATE TABLE groups(
+    /* SERIAL - iterate an id with next one +1 */
+	id SERIAL PRIMARY KEY NOT NULL UNIQUE,
+	name CHARACTER VARYING(255) NOT NULL
+) 
+CREATE TABLE students(
+	id SERIAL PRIMARY KEY NOT NULL UNIQUE,
+	first_name CHARACTER VARYING(255) NOT NULL,
+	last_name CHARACTER VARYING(255) NOT NULL,
+	group_id INTEGER,
+	/* if delete a group, all its students will be remove */
+	FOREIGN KEY (group_id) REFERENCES  groups(id) ON DELETE CASCADE
+) 
+CREATE TABLE courses(
+	id INTEGER UNIQUE,
+	name CHARACTER VARYING(255) PRIMARY KEY,
+	description CHARACTER VARYING(255)
+) 
+CREATE TABLE students_courses(
+	student_id INTEGER REFERENCES students(id) ON DELETE CASCADE,
+	course_name CHARACTER VARYING(255) REFERENCES courses(name) ON DELETE CASCADE
+) 

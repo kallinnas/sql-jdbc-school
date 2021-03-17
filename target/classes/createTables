@@ -1,0 +1,27 @@
+DROP TABLE IF EXISTS students_courses, students, courses, groups CASCADE;
+
+CREATE TABLE groups(
+    /* SERIAL - iterate an id with next one +1 */
+	id SERIAL PRIMARY KEY NOT NULL UNIQUE,
+	name CHARACTER VARYING(255) NOT NULL
+);
+
+CREATE TABLE students(
+	id SERIAL PRIMARY KEY NOT NULL UNIQUE,
+	first_name CHARACTER VARYING(255) NOT NULL,
+	last_name CHARACTER VARYING(255) NOT NULL,
+	group_id INTEGER,
+	/* if delete a group, all its students will be remove */
+	FOREIGN KEY (group_id) REFERENCES  groups(id) ON DELETE CASCADE
+);
+
+CREATE TABLE courses(
+	id INTEGER UNIQUE,
+	name CHARACTER VARYING(255) PRIMARY KEY,
+	description CHARACTER VARYING(255)
+);
+
+CREATE TABLE students_courses(
+	student_id INTEGER REFERENCES students(id) ON DELETE CASCADE,
+	course_name CHARACTER VARYING(255) REFERENCES courses(name) ON DELETE CASCADE
+);

@@ -1,0 +1,73 @@
+
+-------
+17/20/2021 17:20:15
+-------
+
+Error executing 'create table students_courses(
+	student_id integer references students(id) on delete cascade,
+	course_name character varying (255) references courses(name) on delete CASCADE
+) ' (line 27): ПОМИЛКА: відношення "students_courses" вже існує
+
+-------
+17/20/2021 17:20:39
+-------
+
+Error executing 'create table students_courses(
+	student_id integer references students(id) on delete cascade,
+	course_name character varying (255) references courses(name) on delete CASCADE
+) ' (line 27): ПОМИЛКА: відношення "students_courses" вже існує
+
+-------
+17/22/2021 17:22:09
+-------
+
+
+-------
+17/27/2021 17:27:36
+-------
+
+Error executing 'create table students_courses(
+	student_id integer references students(id) on delete cascade,
+	course_name character varying (255) references courses(name) on delete CASCADE
+) ' (line 27): ПОМИЛКА: відношення "students_courses" вже існує
+
+-------
+17/31/2021 17:31:45
+-------
+
+Error executing 'CREATE TABLE students_courses(
+	student_id INTEGER REFERENCES students(id) ON DELETE CASCADE,
+	course_name CHARACTER VARYING(255) REFERENCES courses(name) ON DELETE CASCADE
+) ' (line 27): ПОМИЛКА: відношення "students_courses" вже існує
+
+-------
+17/36/2021 17:36:40
+-------
+
+Error executing 'CREATE TABLE students_courses(
+	student_id INTEGER REFERENCES students(id) ON DELETE CASCADE,
+	course_name CHARACTER VARYING(255) REFERENCES courses(name) ON DELETE CASCADE
+) ' (line 27): ПОМИЛКА: відношення "students_courses" вже існує
+
+-------
+17/37/2021 17:37:24
+-------
+
+
+-------
+17/38/2021 17:38:53
+-------
+
+Error executing 'CREATE TABLE students_courses(
+	student_id INTEGER REFERENCES students(id) ON DELETE CASCADE,
+	course_name CHARACTER VARYING(255) REFERENCES courses(name) ON DELETE CASCADE
+) ' (line 27): ПОМИЛКА: відношення "students_courses" вже існує
+
+-------
+17/41/2021 17:41:49
+-------
+
+Error executing 'CREATE TABLE students_courses(
+	student_id INTEGER REFERENCES students(id) ON DELETE CASCADE,
+	course_name CHARACTER VARYING(255) REFERENCES courses(name) ON DELETE CASCADE
+) ' (line 27): ПОМИЛКА: відношення "students_courses" вже існує
